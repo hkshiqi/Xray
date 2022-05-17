@@ -1,1 +1,4 @@
 # Xray
+```
+https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/xray.sh
+```
