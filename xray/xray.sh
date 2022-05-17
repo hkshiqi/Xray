@@ -1,7 +1,7 @@
 #! /bin/bash
 #安装必备工具
-apt-get update && apt-get install wget curl git -y
-apt install unzip
+sudo apt-get update
+apt-get install unzip
 
 
 #性能优化
