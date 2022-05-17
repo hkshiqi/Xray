@@ -1,4 +1,4 @@
 # Xray
 ```
-https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/xray.sh
+bash <(curl -Ls https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/xray.sh)
 ```
