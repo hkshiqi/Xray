@@ -12,6 +12,7 @@ lsmod |grep conntrack
 
 #下载安装XRAY
 mkdir /etc/xray
+cd /etc/xray
 wget --no-check-certificate -O /etc/xray/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.5.5/Xray-linux-64.zip
 unzip -o /etc/xray/Xray-linux-64.zip
 mkdir /etc/xray/bin
