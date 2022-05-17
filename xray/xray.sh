@@ -1,4 +1,9 @@
 #! /bin/bash
+#安装必备工具
+apt-get update && apt-get install wget curl git -y
+apt install unzip
+
+
 #性能优化
 echo 500000 >/proc/sys/kernel/pid_max
 echo 500000 >/proc/sys/kernel/threads-max
