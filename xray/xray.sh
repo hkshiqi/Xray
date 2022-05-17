@@ -27,12 +27,12 @@ wget --no-check-certificate -O /lib/systemd/system/qd.service https://raw.github
 sudo systemctl daemon-reload
 systemctl enable qd.service
 wget --no-check-certificate -O /etc/xray/qd.sh https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/qd.sh
-cd /etc/xray
 chmod +x /etc/xray/bbr.sh
+cd /etc/xray
 ./qd.sh
 
 #安装启动BBR
 wget --no-check-certificate -O /etc/xray/bbr.sh https://raw.githubusercontent.com/hkshiqi/x-ui/main/installbbr/bbr 
+chmod +x /etc/xray/bbr.sh
 cd /etc/xray
-chmod +x /etc/xray/bbr.sh 
 ./bbr.sh
