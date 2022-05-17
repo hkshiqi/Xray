@@ -15,11 +15,11 @@ mkdir /etc/xray
 wget --no-check-certificate -O /etc/xray/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.5.5/Xray-linux-64.zip
 unzip -o /etc/xray/Xray-linux-64.zip
 mkdir /etc/xray/bin
-wget --no-check-certificate -O /etc/xray/bin/config.json https://raw.githubusercontent.com/hkshiqi/x-ui/main/amazon/socks5/config.json
+wget --no-check-certificate -O /etc/xray/bin/config.json https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/bin/config.json
 chmod +x /etc/xray
-wget --no-check-certificate -O /lib/systemd/system/qd.service https://raw.githubusercontent.com/hkshiqi/x-ui/main/amazon/socks5/qd.service
+wget --no-check-certificate -O /lib/systemd/system/qd.service https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/qd.service
+sudo systemctl daemon-reload
+systemctl enable qd.service
 
 #安装启动BBR
 wget --no-check-certificate -O /etc/xray/bbr.sh https://raw.githubusercontent.com/hkshiqi/x-ui/main/installbbr/bbr && chmod +x /etc/xray/bbr.sh && ./bbr.sh
-sudo systemctl daemon-reload
-systemctl enable qd.service
