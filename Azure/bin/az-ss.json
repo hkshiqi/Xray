@@ -1,0 +1,266 @@
+{
+	"log": {
+		"loglevel": "none"
+	},
+	"routing": {
+		"domainStrategy": "IPOnDemand",
+		"rules": [{
+				"type": "field",
+				"inboundTag": ["s1"],
+				"outboundTag": "ipout1"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s2"],
+				"outboundTag": "ipout2"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s3"],
+				"outboundTag": "ipout3"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s4"],
+				"outboundTag": "ipout4"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s5"],
+				"outboundTag": "ipout5"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s6"],
+				"outboundTag": "ipout6"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s7"],
+				"outboundTag": "ipout7"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s8"],
+				"outboundTag": "ipout8"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s9"],
+				"outboundTag": "ipout9"
+			},
+			{
+				"type": "field",
+				"inboundTag": ["s10"],
+				"outboundTag": "ipout10"
+			}
+		]
+	},
+	"inbounds": [
+		{
+			"tag": "s1",
+			"listen": "10.0.0.4",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s2",
+			"listen": "10.0.0.5",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s3",
+			"listen": "10.0.0.6",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s4",
+			"listen": "10.0.0.7",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s5",
+			"listen": "10.0.0.8",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s6",
+			"listen": "10.0.0.9",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s7",
+			"listen": "10.0.0.10",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s8",
+			"listen": "10.0.0.11",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s9",
+			"listen": "10.0.0.12",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		},
+		{
+			"tag": "s10",
+			"listen": "10.0.0.13",
+			"port": 20001,
+			"protocol": "shadowsocks",
+			"sniffing": {
+				"enabled": true,
+				"destOverride": ["http", "tls"]
+			},
+			"settings": {
+			"method": "aes-256-gcm",
+			"password": "aa321321",
+			"network": "tcp,udp"
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"protocol": "freedom",
+			"tag": "ipout1",
+			"sendThrough": "10.0.0.4"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout2",
+			"sendThrough": "10.0.0.5"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout3",
+			"sendThrough": "10.0.0.6"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout4",
+			"sendThrough": "10.0.0.7"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout5",
+			"sendThrough": "10.0.0.8"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout6",
+			"sendThrough": "10.0.0.9"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout7",
+			"sendThrough": "10.0.0.10"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout8",
+			"sendThrough": "10.0.0.11"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout9",
+			"sendThrough": "10.0.0.12"
+		},
+		{
+			"protocol": "freedom",
+			"tag": "ipout10",
+			"sendThrough": "10.0.0.13"
+		},
+		{
+			"protocol": "blackhole"
+		}
+	]
+}
