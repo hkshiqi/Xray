@@ -21,7 +21,7 @@ wget --no-check-certificate -O /etc/xray/Xray-linux-64.zip https://github.com/XT
 cd /etc/xray
 unzip -o /etc/xray/Xray-linux-64.zip
 mkdir /etc/xray/bin
-wget --no-check-certificate -O /etc/xray/bin/config.json https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/bin/config.json
+wget --no-check-certificate -O /etc/xray/bin/az-ss.json https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/Azure/bin/az-ss.json
 chmod +x /etc/xray
 wget --no-check-certificate -O /lib/systemd/system/qd.service https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/qd.service
 sudo systemctl daemon-reload
