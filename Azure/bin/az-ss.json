@@ -13,97 +13,97 @@
 				"type": "field",
 				"inboundTag": ["s2"],
 				"outboundTag": "ipout2"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s3"],
 				"outboundTag": "ipout3"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s4"],
 				"outboundTag": "ipout4"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s5"],
 				"outboundTag": "ipout5"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s6"],
 				"outboundTag": "ipout6"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s7"],
 				"outboundTag": "ipout7"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s8"],
 				"outboundTag": "ipout8"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s9"],
 				"outboundTag": "ipout9"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s10"],
 				"outboundTag": "ipout10"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s11"],
 				"outboundTag": "ipout11"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s12"],
 				"outboundTag": "ipout12"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s13"],
 				"outboundTag": "ipout13"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s14"],
 				"outboundTag": "ipout14"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s15"],
 				"outboundTag": "ipout15"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s16"],
 				"outboundTag": "ipout16"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s17"],
 				"outboundTag": "ipout17"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s18"],
 				"outboundTag": "ipout18"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s19"],
 				"outboundTag": "ipout19"
-			}
+			},
 			{
 				"type": "field",
 				"inboundTag": ["s20"],
 				"outboundTag": "ipout20"
-			}
+			},
 		]
 	},
 	"inbounds": [
