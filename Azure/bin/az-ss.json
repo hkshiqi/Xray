@@ -103,7 +103,7 @@
 				"type": "field",
 				"inboundTag": ["s20"],
 				"outboundTag": "ipout20"
-			},
+			}
 		]
 	},
 	"inbounds": [
@@ -406,7 +406,7 @@
 			"password": "aa321321",
 			"network": "tcp,udp"
 			}
-		},
+		}
 		],
 	"outbounds": [
 		{
