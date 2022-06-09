@@ -27,7 +27,7 @@ wget --no-check-certificate -O /lib/systemd/system/qd.service https://raw.github
 sudo systemctl daemon-reload
 systemctl enable qd.service
 wget --no-check-certificate -O /etc/xray/qd.sh https://raw.githubusercontent.com/hkshiqi/Xray/gh-pages/xray/qd.sh
-chmod +x /etc/xray/bbr.sh
+chmod +x /etc/xray/qd.sh
 cd /etc/xray
 ./qd.sh
 
