@@ -117,7 +117,8 @@
 				"enabled": true,
 				"destOverride": ["http", "tls"]
 			},
-			"settings": {			"accounts":[
+			"settings": {			
+			"accounts":[
 			｛
 			"user":"aa321321",
 			"pass":"aa321321"
