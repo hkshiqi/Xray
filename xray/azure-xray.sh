@@ -30,6 +30,8 @@ wget --no-check-certificate -O /etc/xray/qd.sh https://raw.githubusercontent.com
 chmod +x /etc/xray/qd.sh
 cd /etc/xray
 ./qd.sh
+#
+reboot
 
 #安装启动BBR
 wget --no-check-certificate -O /etc/xray/bbr.sh https://raw.githubusercontent.com/hkshiqi/x-ui/main/installbbr/bbr 
