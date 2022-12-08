@@ -9,7 +9,7 @@ echo 500000 >/proc/sys/kernel/pid_max
 echo 500000 >/proc/sys/kernel/threads-max
 echo 500000 >/proc/sys/vm/max_map_count
 echo 500000 >/proc/sys/fs/file-max
-ulimit -SHn 10240
+ulimit -SHn 65540
 ulimit -SHs unlimited
 modprobe ip_conntrack
 echo 1000000 >/proc/sys/net/nf_conntrack_max
